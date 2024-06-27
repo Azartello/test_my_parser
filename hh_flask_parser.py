@@ -5,7 +5,7 @@ from hh_parser import create_app
 
 from hh_parser.database import db_session, Base, engine
 app = create_app()
-
+# комментарий
 @app.teardown_appcontext
 def shutdown_session(exception=None):
     db_session.close()
